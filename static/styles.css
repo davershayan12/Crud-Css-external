@@ -251,3 +251,20 @@ body{
     background-image:url("Satilite.png");
     background-size:100% 100%; 
 }
+
+.container button {
+    border: none;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-left: 3.5rem;
+    font-size: 1rem;
+}
+.container button:hover {
+    background-color: rgb(14, 134, 14);
+}
+.container label {
+    font-size: 1.5rem;
+    color: white;
+    font-family: monospace;
+    margin-left: .75rem;
+}

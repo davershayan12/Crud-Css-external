@@ -3,37 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>QuantumVerse.ltd - Gallery</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-               <a href="{{ url_for('index') }}">
-                <img src="{{ url_for('static', filename='quantum.png') }}">
-                <span>QuantumVerse.ltd</span>
-               </a>  
-            </div>
-            <ul>
-                <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
-                <li><a href="{{ url_for('collaboration') }}">Collaboration</a></li>
-                <li><a href="{{ url_for('overvision') }}">Over Vision</a></li>
-                <li><a href="{{ url_for('manageemployee') }}">Manage Employees</a></li>
-                <li><a href="{{ url_for('about') }}">About Us</a></li>
-                <li><a href="{{ url_for('index') }}">Home</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="flex">
-        <div class="container">
-          <div class="items item-1"></div>
-          <div class="items item-2"></div>
-          <div class="items item-3"></div>
-          <div class="items item-4"></div>
-          <div class="items item-5"></div>
-          <div class="items item-6"></div>
-          <div class="items item-7"></div>
-  
-       </div>  
-      </div>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='quantum.png') }}">
+            <a href="{{ url_for('index') }}"><span>QuantumVerse.ltd</span></a>
+        </div>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('manageemployee') }}">Manage Employees</a></li>
+            <li><a href="{{ url_for('overvision') }}">Over Vision</a></li>
+            <li><a href="{{ url_for('collaboration') }}">Collaboration</a></li>
+            <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="item item-1"><span>A</span></div>
+        <div class="item item-2"><span>B</span></div>
+        <div class="item item-3"><span>C</span></div>
+        <div class="item item-4"><span>D</span></div>
+        <div class="item item-5"><span>E</span></div>
+        <div class="item item-6"><span>F</span></div>
+        <div class="item item-7"><span>G</span></div>
+    </div>
+</body>
+</html>

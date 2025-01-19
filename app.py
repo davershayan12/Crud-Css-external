@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
@@ -25,6 +25,15 @@ def overvision():
 @app.route('/manageemployee')
 def manageemployee():
     return render_template('manageemployee.html')
+
+@app.route('/recruit', methods=['GET', 'POST'])
+def recruit():
+    if request.method == 'POST':
+        # Handle form submission
+        name = request.form['name']
+        # Process the form data
+        return redirect(url_for('index'))
+    return render_template('recruit.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
