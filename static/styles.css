@@ -205,8 +205,8 @@ body{
     display: grid;
     position: absolute;
     top:6.25rem;
-    grid-template-rows:6.25rem 200px 6.25rem 200px 200px;
-    grid-template-columns: 250px 200px 200px 200px 250px 200px 100px;
+    grid-template-rows:6.25rem 12.5rem 6.25rem 12.5rem 12.5rem;
+    grid-template-columns: 15.625rem 12.5rem 12.5rem 12.5rem 15.625 12.5rem 6.25;
 }
 .item-1{
     grid-row: 1/3;
