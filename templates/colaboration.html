@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">           
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+               <a href="{{ url_for('index') }}">
+                <img src="{{ url_for('static', filename='quantum.png') }}">
+                <span>QuantumVerse.ltd</span>
+               </a>  
+            </div>
+            <ul>
+                <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+                <li><a href="{{ url_for('collaboration') }}">Collaboration</a></li>
+                <li><a href="{{ url_for('overvision') }}">Over Vision</a></li>
+                <li><a href="{{ url_for('manageemployee') }}">Manage Employees</a></li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="flex"><p class="l">Our Leading Partners</p></div>
+</body>
+</html>

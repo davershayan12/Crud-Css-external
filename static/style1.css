@@ -9,8 +9,8 @@ body{
 .ba{
     position:absolute;
     bottom:0;
-    right:100px;
-    height:800px
+    right:4.25rem;
+    height: 50rem;
 
 } 
 .navbar{
@@ -22,26 +22,26 @@ body{
     display: flex;
     align-items: center; 
     justify-content: space-between; 
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
    
 }
 
 .navbar li{
     float:right;
     list-style: none;
-    margin:25px;
-    margin-right:20px;
+    margin:1.5625rem;
+    margin-right:1.25rem;
  }
 .navbar ul{
     overflow: auto;
-    margin-right:100px;
+    margin-right:6.25rem;
 
 }
 .navbar li a{
     color:white;
     text-decoration:none;
-    padding:5px;
-    font-size: 18px;
+    padding:0.3125rem;
+    font-size: 1.125rem;
     font-weight: bold;
 }
 .navbar li a:hover{
@@ -53,8 +53,8 @@ body{
     align-items: center; /* Vertically center the items */
 }    
 .logo img {
-    height: 70px;
-    margin-right: 25px; 
+    height: 4.375rem;
+    margin-right: 1.5625rem; 
 }
 
 .logo a{
@@ -64,17 +64,17 @@ body{
     text-decoration: none;
 }
 .logo span{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
 }
 .tt{
     font-family:monospace;
-    font-size:65px;
+    font-size:4.0625rem;
     font-weight:bold;
     color: white;
     position:absolute;
-    left:60px;
-    top:350px
+    left:3.75rem;
+    top:21.875rem
 
 }
 .flex{
@@ -85,37 +85,37 @@ body{
     background-color: white;
     opacity: 0.1;
     position: absolute;
-    bottom:50px;
-    height: 700px;
-    width: 1500px;
+    bottom:3.125rem;
+    height: 43.75rem;
+    width: 93.75rem;
 
 }
 .bbb{
     background-color: white;
     opacity: 0.3;
     position: absolute;
-    bottom:100px;
-    height: 500px;
-    width: 1400px;
+    bottom:6.25rem;
+    height: 31.25rem;
+    width: 87.5rem;
 
     
 }
 .pp{
     position:absolute;
-    top:220px;
-    left:100px;
+    top:13.75rem;
+    left:6.25rem;
     color: white;
     font-weight: bold;
-    font-size:30px;
+    font-size:1.875rem;
 }
 /* Green button styles */
 .greenbutton{
     border:none;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     background-color:#389038; 
     color:white;
-    font-size: 15px;
-    padding:15px 35px;
+    font-size: 0.9375rem;
+    padding:.9375rem 2.1875rem;
     cursor: pointer; 
     transition: background-color 0.3s; 
 }
@@ -126,6 +126,6 @@ body{
 
 .button-container {
     position: absolute;
-    top: 220px;
-    right: 100px; 
+    top: 220rem;
+    right: 6.25rem; 
 }
