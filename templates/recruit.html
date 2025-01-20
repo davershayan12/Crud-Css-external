@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recruit Employee</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    
 </head>
 <body>
     <div class="container">
@@ -13,14 +12,11 @@
             <h2>Employee</h2>
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name"><br>
-            </label><br>
-            <input type="text"><br>
             <label for="email">Email:</label><br>
-            <input type="email"><br>
-            <label for="tel">Phone:</label><br>
-            <input type="tel"><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone"><br>
             <button type="submit">Add Employee</button>
-            <button type="submit">Submit</button>
         </form>
     </div>
 </body>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+               <a href="{{ url_for('index') }}">
+                <img src="{{ url_for('static', filename='quantum.png') }}" alt="QuantumVerse Logo">
+                <span>QuantumVerse.ltd</span>
+               </a>  
+            </div>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+                <li><a href="{{ url_for('manageemployee') }}">Manage Employees</a></li>
+                <li><a href="{{ url_for('overvision') }}">Over Vision</a></li>
+                <li><a href="{{ url_for('collaboration') }}">Collaboration</a></li>
+                <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+     <h2>Employees List</h2>
+     <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for employee in employees %}
+            <tr>
+                <td>{{ employee[0] }}</td>
+                <td>{{ employee[1] }}</td>
+                <td>{{ employee[2] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+     </table>
+    </div>
+</body>
+</html>

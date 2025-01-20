@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for
+import csv
 
 app = Flask(__name__)
+app.secret_key = "Secret Key"
 
 @app.route('/')
 def index():
@@ -31,9 +33,25 @@ def recruit():
     if request.method == 'POST':
         # Handle form submission
         name = request.form['name']
-        # Process the form data
-        return redirect(url_for('index'))
+        email = request.form['email']
+        phone = request.form['phone']
+        
+        # Write the data to a CSV file
+        with open('employees.csv', mode='a', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow([name, email, phone])
+        
+        return redirect(url_for('employees'))
     return render_template('recruit.html')
 
-if __name__ == '__main__':
+@app.route('/employees')
+def employees():
+    employees_list = []
+    with open('employees.csv', mode='r') as file:
+        reader = csv.reader(file)
+        for row in reader:
+            employees_list.append(row)
+    return render_template('employees.html', employees=employees_list)
+
+if __name__ == "__main__":
     app.run(debug=True)
